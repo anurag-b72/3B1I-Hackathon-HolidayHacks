@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+   
+}
+.right {
+    display: grid;
+
+    grid-template-rows: 1fr 3fr 20px 5fr;
+    grid-gap: 4px;
+}
+
+.title {
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: rgb(37, 28, 155);
+}
+
+.title p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: black;
+}
+
+
+.faculty {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    height: 3vh;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    height: 29vh;
+    grid-gap: 2px;
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    height: 1vh;
+
+}
+
+.question {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.name {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.faculty :hover {
+    background-color: rgb(130, 200, 247);
+    cursor: pointer;
+}
+
+.name p {
+    display: inline-block;
+}
+
+hr {
+    display: inline-block;
+    height: 20px;
+    margin-bottom: -6px;
+
+}
+
+.sno {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -8;
+}
+
+.question hr {
+    display: block;
+
+}
+
+.ques {
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    height: 39vh;
+    grid-gap: 2px;
+
+}
+
+#submit {
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: rgb(24, 113, 214);
+}
+
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.ques ol li p {
+    display: inline-block;
+}
+.name p{
+    color: blueviolet;
+}
+.name p strong{
+    color: blue;
+}

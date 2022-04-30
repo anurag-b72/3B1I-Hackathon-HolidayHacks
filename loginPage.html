@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/styleLoginPage.css">
+</head>
+
+<body background="imagesUsed/bgLogin.jpeg">
+    <div class="loginRightDiv">
+        <h1><b>Hello SSTCian!</b></h1>
+        <h2>Welcome back, kindly fill in the details to login.</h2>
+        <div id="loginDetails">
+            <p class="box"><span><img id="username_logo" src="styles/imagesUsed/username.png" alt="" srcset=""></span><span id="asterick_username">*</span>
+              <input type="text" name="" class="detailBox" id="usernameBox" placeholder="Username "></p>
+            <p class="box"><span><img id="password_logo" src="styles/imagesUsed/password.png" alt="" srcset=""></span><span id="asterick_password">*</span>
+              <input type="text" name="" class="detailBox" id="passwordBox" placeholder="Password"></p>
+            <select name="" class="detailBox" id="sessionBox">
+                <option value="" selected>Jan 2022 (New Session)</option>
+                <option value="">Jul 2021 (old Session)</option>
+            </select>
+            <p><a href="dashboardWithNav.html"><input type="submit" class="detailBox" id="loginButton" value="Login in"></a></p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+.right {
+    background: rgba(20, 115, 230, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1rem;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: -57px;
+}
+
+.bookSearch {
+    background: rgba(20, 115, 230, 0.1);
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+.digitalLibrary {
+    background: rgba(20, 115, 230, 0.1);
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+.Dues {
+    background: rgba(20, 115, 230, 0.1);
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+.Transaction {
+    background: rgba(20, 115, 230, 0.1);
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+.centralLibrary {
+    background: rgba(20, 115, 230, 0.1);
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+.eLibrary {
+    background: rgba(20, 115, 230, 0.1);
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+.icon1 {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    /* border: 1px solid black; */
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #BE1616;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.detail {
+    /* border: 1px solid black; */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+
+}
+
+.icon1 a {
+    font-size: 5rem;
+}

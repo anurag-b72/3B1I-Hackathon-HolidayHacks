@@ -1,0 +1,84 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("imagesUsed/bgLogin.png");
+    background-size: 1535px 721px;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Poppins';
+}
+
+.loginRightDiv {
+    margin-left: 995px;
+    margin-top: 150px;
+}
+
+#loginDetails {
+    display: block;
+    text-align: center;
+}
+
+.detailBox {
+    padding: 0px 0px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin: 5px;
+    font-family: 'Poppins';
+}
+
+#username_logo {
+    position: relative;
+    left: -45px;
+}
+
+#password_logo {
+    position: relative;
+    left: -50px;
+}
+
+#asterick_username {
+    position: relative;
+    left: -40px;
+    color: red;
+}
+
+#asterick_password {
+    position: relative;
+    left: -49px;
+    color: red;
+}
+
+#usernameBox {
+    border: 2px solid;
+    border-color: #1558A6;
+    margin-left: -41px;
+    text-align: center;
+}
+
+#passwordBox {
+    border: 2x solid;
+    border-color: #1E7CBF;
+    margin-left: -52px;
+    text-align: center;
+}
+
+#sessionBox {
+    border: 2px solid;
+    border-color: #3E9EE4;
+}
+
+#loginButton {
+    margin-top: 80px;
+    background-color: #1473E6;
+    border-color: #1473E6;
+    border-radius: 30px;
+    width: 250px;
+}
+
+#loginButton:hover {
+    background: linear-gradient(194.3deg, #9005FD 5.5%, #0997D9 97.83%);
+}
+
+h1 {
+    font-size: 40px;
+}

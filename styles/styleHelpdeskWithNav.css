@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.right {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgba(20, 115, 230, 0.1);
+    margin-top: -55px;
+}
+
+.upper {
+    background: rgba(20, 115, 230, 0.1);
+    border: 2px solid burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.lower {
+    background-color: rgb(237, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.upper h1 {
+    color: rgb(249, 16, 191);
+}
+
+.lower h1 {
+    color: red;
+    font-size: 1.75rem;
+    padding: 10px 15px;
+}
+
+.right i {
+    font-size: 3rem;
+    padding: 1vw 10vw;
+}
+
+.right a {
+    font-size: 2rem;
+}
+
+.upper .bxl-google {
+    color: #3F3356;
+}
+
+.upper .bx-phone {
+    color: #3F3356;
+}
+
+.lower .bx-phone {
+    color: red;
+}
+
+.lower .bxl-gmail {
+    color: red;
+}
+
+.bxl-gmail a {
+    color: blue;
+}
+
+.bxl-google a {
+    color: blue;
+}
+
+a:hover {
+    color: rgb(0, 128, 255);
+    border-bottom: 5px solid black;
+    border-radius: 10px;
+}
+
+.bx-phone a {
+    text-decoration: none;
+    border-bottom: none;
+    color: blue;
+}
+
+.bx-phone a:hover {
+    cursor: no-drop;
+}

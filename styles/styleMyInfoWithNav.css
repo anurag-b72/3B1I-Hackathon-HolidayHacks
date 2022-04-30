@@ -1,0 +1,76 @@
+body{
+    background: rgba(20, 115, 230, 0.1);
+    margin: 0px;
+  }
+  .container{
+    margin-top: -35px;
+  }
+  .right{
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      margin: 3rem 0rem;
+      margin-left: 5px;
+      margin-right: 5px;
+      height: 100vh;
+  }
+  .update{
+    border: 1px solid black;
+    border-radius: 8px;
+    
+  }
+  .message{
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .password{
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .update ,.message ,.password
+  {
+      background: rgba(20, 115, 230, 0.1);
+      padding-left: 10px;
+      padding-top: 10px;
+  }
+  .text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1E716C;
+  }
+  .icon{
+    padding: 1px;
+    display: flex;
+  }
+  .icon i{
+    display: inline-block;
+    font-size: 4rem;
+    padding-left: 20px;
+    padding-top: 12px;
+  }
+  .icon p{
+  padding-left: 1rem;  
+  font-size: 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px;
+  }
+  .link{
+  text-align: center;
+  position: relative;    
+  bottom: -15px;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 80px;
+  text-decoration-line: underline;
+  }
+  .link a{
+  color: #106CC0;
+  }

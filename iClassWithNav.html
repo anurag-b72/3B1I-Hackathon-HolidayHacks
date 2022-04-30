@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iClassWithNav</title>
+    <link rel="import" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles/styleNav.css">
+    <link rel="stylesheet" href="styles/styleIClassPage.css">
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> <a href="#" class="nav_logo"> <i class='bx bxs-graduation' style='color:#ffffff'></i> <span
+                        class="nav_logo-name" style="font-size:xx-large;">EDRP</span> </a>
+                <div> <a href="#" class="nav_logo"> <i class='bx bxs-user-account' style='color:#ffffff'></i> <span
+                            class="nav_logo-name">ABC DEF</span> <br> <span class="nav_logo-name"
+                            style="font-size:smaller;">4th CSE</span> </a>
+                    <div>
+                        <div class="nav_list">
+                            <a href="dashboardWithNav.html" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span
+                                    class="nav_name">Dashboard</span> </a>
+
+                            <a href="myInfoWithNav.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span
+                                    class="nav_name">My-Info</span> </a>
+
+                            <a href="iClassWithNav.html" class="nav_link"> <i class='bx bx-devices'></i> <span
+                                    class="nav_name">I-Classes</span> </a>
+
+                            <a href="http://sstcbhilai.kopykitab.com/" target="_blank" class="nav_link"> <i class='bx bx-book-open'></i> <span class="nav_name">Online
+                                    books</span> </a>
+
+                            <a href="libraryWithNav.html" class="nav_link"> <i class='bx bx-library'></i> <span
+                                    class="nav_name">Library</span> </a>
+
+                            <a href="NoticeWithNav.html" class="nav_link"> <i class='bx bx-message-detail'></i> <span
+                                    class="nav_name">Notice</span> </a>
+
+                            <a href="helpdeskWithNav.html" class="nav_link"> <i class='bx bx-help-circle'></i> <span
+                                    class="nav_name">Helpdesk</span> </a>
+
+                        </div>
+                    </div> <a href="loginPage.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+                            class="nav_name">SignOut</span> </a>
+        </nav>
+    </div>
+    <div class="height-100 bg-light">
+        <div class="container">
+            <div class="right">
+                <div class="branch">
+                    <h2>Branch :</h2>
+                    <hr>
+                    <p>
+                        B.PHARMA (58) <br>
+                        BEFY (555) <br>
+                        CIVIL (904) <br>
+                        <a href="#" id="cseSubjectHtml">CSE (2137)</a><br>
+                        DEFY (119) <br>
+                        DIPLOMA(CIVIL) (61) <br>
+                        DIPLOMA(MECH) (144) <br>
+                        EEE (769) <br>
+                        EI (870) <br>
+                        ELEC (1171) <br>
+                        ETC (1637) <br>
+                        IT (746) <br>
+                        MBA (711) <br>
+                        MCA (843)<br>
+                        ME(COMM)ETC (34)<br>
+                        ME(CSE)CSE (4)<br>
+                        ME(CTA)CSE (3)<br>
+                        ME(DES)MECH (21)<br>
+                        ME(DIGIAL.ELEX.)ETC (6)<br>
+                        ME(IT)IT (8)<br>
+                        ME(PEPS)EEE (1)<br>
+                        ME(PSE)ELEC (4)<br>
+                    </p>
+                </div>
+                <div class="choice">
+                    <h2>Choice :</h2>
+                    <hr>
+                    <a href="#" id="adaChoiceSyllabus"></a>
+                    <p id="paraaaa"></p>
+                </div>
+                <div class="subject">
+                    <h2>Subject :</h2>
+                    <hr>
+                    <a href="#" id="cseSubjectAda"></a>
+                    <a href="#" id="cseSubjectCsa"></a>
+                    <a href="#" id="cseSubjectDbms"></a>
+                    <a href="#" id="cseSubjectDiscrete"></a>
+                    <a href="#" id="cseSubjectJava"></a>
+                </div>
+                <div class="item">
+                    <h1>I-Classes</h1>
+                    <p id="syllabusIClass"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            const showNavbar = (toggleId, navId, bodyId, headerId) => {
+                const toggle = document.getElementById(toggleId),
+                    nav = document.getElementById(navId),
+                    bodypd = document.getElementById(bodyId),
+                    headerpd = document.getElementById(headerId)
+                if (toggle && nav && bodypd && headerpd) {
+                    toggle.addEventListener('click', () => {
+
+                        nav.classList.toggle('show')
+                        toggle.classList.toggle('bx-x')
+                        bodypd.classList.toggle('body-pd')
+                        headerpd.classList.toggle('body-pd')
+                    })
+                }
+            }
+
+            showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+            const linkColor = document.querySelectorAll('.nav_link')
+
+            function colorLink() {
+                if (linkColor) {
+                    linkColor.forEach(l => l.classList.remove('active'))
+                    this.classList.add('active')
+                }
+            }
+            linkColor.forEach(l => l.addEventListener('click', colorLink))
+        });
+        document.getElementById("cseSubjectHtml").onclick = function () {
+            document.getElementById("cseSubjectAda").innerHTML = "Analysis & Design Of Algorithm [Theory](14) <br>";
+            document.getElementById("cseSubjectCsa").innerHTML = "<br> Computer System Architecture  [Theory](73) <br>";
+            document.getElementById("cseSubjectDbms").innerHTML = "<br> Data Base Management System  [Lab](6) <br>";
+            document.getElementById("cseSubjectDiscrete").innerHTML = "<br> Discrete Mathematics  [Theory](0) <br>";
+            document.getElementById("cseSubjectJava").innerHTML = "<br> Java Programming  [Theory](0) <br>";
+        }
+        document.getElementById("cseSubjectAda").onclick = function () {
+            document.getElementById("adaChoiceSyllabus").innerHTML = "Syllabus(1)";
+            document.getElementById("paraaaa").innerHTML = "QBank(3) <br> videoLecture(1) <br>  Ebooks(1) <br> Tutorial(7) <br> lessonplan(67) <br> Tests(0)";
+        }
+        document.getElementById("adaChoiceSyllabus").onclick = function () {
+            document.getElementById("syllabusIClass").innerHTML = "<h3> Syllabus : </h3> <br> Unit – I [Number of Hours Required for UNIT-1-12 Hours] [ CO1, CO2, CO3] - Definitions and Application of notations, Asymptotic notations: big oh, small oh, omega and theta notations, worst case, best case and average case analysis. solving recurrence equations: General recurrence equation, Master Method, Recursive Tree Method, substitution method, analysing control structures. Analysis of Sorting and Searching: Heap, insertion, selection and bubble sort; sequential, binary and Fibonacci search. <br> <br> Unit – II [Number of Hours Required for UNIT-2-14 Hours] [ CO1, CO2, CO3] - Divide and Conquer technique of problem solving, sorting algorithms : the Basic divide and conquer algorithm for matrix multiplication, Quicksort, Mergesort, heap sort, shell sort, radix sort, Dynamic sets and searching : Array doubling, Red Black trees, hashing high, priority queues. <br> <br> Unit – III [Number of Hours Required for UNIT-3-14 Hours] [ CO1, CO2, CO3] - Graphs : Definitions and representations, traversal, DFS and BFS., DFS on undirected graphs. Greedy algorithms : Prim’s algorithm, single source shortest paths, kruskal’s minimal spanning trees, Dijkstra shortest path Transitive closure, APSP problem, Fractional Knapsack problem,TSP.<br> <br> Unit - IV[Number of Hours Required for UNIT-4-12 Hours] [ CO1, CO2, CO3] - Dynamic Programming and String Matching : Sum of Subset problem, Graphs and their traversal, Multiplying a sequence of matrices, Multi Stage Graph, longest common sub sequence, knapsack problem. String Matching : Knuth - Moore-Pratt Algorithm, Boyer- Moore Algorithm, The general string problem as a finite automata .<br> <br> Unit - V[Number of Hours Required for UNIT-5-09 Hours] [ CO4, CO5] - Backtracking and Branch and Bound : Back tracking and Recursive back tracking, the general method, N-queens problem, sum of subsets, graph coloring, Hamiltonian cycle, Knapsack problem . General method, applications (Branch and Bound): 15 puzzle problem ,Travelling sales person problem, 0/1 knapsack problem, LC (Least-cost search), FIFO Branch and Bound solution.";
+        }
+
+
+    </script>
+</body>
+
+</html>

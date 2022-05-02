@@ -23,4 +23,4 @@ Click fill feedBack Form button from dashboard to re-direct to feed back page
 online books redirect to the original http://sstcbhilai.kopykitab.com website.
 
 Still this is just a basic idea of what a transformed EDRP website will look like, isn't it beautiful?
-yes there is still a huge possibility and there is no limit on what further we can do
+yes there is still a huge possibility and there is no limit on what further we can do...

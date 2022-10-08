@@ -23,9 +23,19 @@
                 <option value="" selected>Jan 2022 (New Session)</option>
                 <option value="">Jul 2021 (Old Session)</option>
             </select>
-            <p><a href="assets/dashboardWithNav.html"><input type="submit" class="detailBox" id="loginButton" value="Login in"></a></p>
+            <p><input type="submit" class="detailBox" id="loginButton" value="Login in"></p>
         </div>
     </div>
+   <script type="text/javascript">
+        document.getElementById("loginButton").onclick = function() {
+            if((document.getElementById("usernameBox").value=="AAAA") && document.getElementById("passwordBox").value=="3b1i") {
+                location.href = "dashboardWithNav.html";
+            }
+            else {
+                alert("Wrong Password, Please try again!");
+            }
+        }
+    </script>
 </body>
 
 </html>

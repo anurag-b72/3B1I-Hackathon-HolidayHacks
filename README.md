@@ -14,7 +14,12 @@ Some Major Problems were :
     https://youtu.be/lIhT-lRUFmU
 
 -- STEPS TO WORK AND VIEW OUR CURRENT WEBSITE --
-1. Start with the login page i.e. Index.html, (no validation) so click login to go inside the website.
+1. Start with the login page i.e. Index.html, 
+
+    Username : **AAAA**
+    Password : **3b1i**
+
+    click login to go inside the website.
 2. from the side navigation scroll any page or field you want to go to.
 3. logout when everything is done from the bottom of the nav bar.
 
